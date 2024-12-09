@@ -58,7 +58,7 @@ $theme-color : #063868;
     background-color: #f1f4f9;
 
     &--header{
-        height: 200px;
+        height: 300px;
         background-color: $theme-color;
         &--top{
             height: 78px;
@@ -70,6 +70,25 @@ $theme-color : #063868;
         }
         span{
             font-weight: 600;
+            color: #fff;
+        }
+    }
+
+}
+.layout-card{
+    margin-top: -210px;
+    &__h{
+        height: auto;
+    }
+    .icon-layout{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #ff7800;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 10px;
+        i{
             color: #fff;
         }
     }

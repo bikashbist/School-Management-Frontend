@@ -117,7 +117,7 @@
   background-color: #f1f4f9;
 }
 .layout-content-wrapper--header {
-  height: 200px;
+  height: 300px;
   background-color: #063868;
 }
 .layout-content-wrapper--header--top {
@@ -128,5 +128,24 @@
 }
 .layout-content-wrapper .profile span {
   font-weight: 600;
+  color: #fff;
+}
+
+.layout-card {
+  margin-top: -210px;
+}
+.layout-card__h {
+  height: auto;
+}
+.layout-card .icon-layout {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff7800;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.layout-card .icon-layout i {
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
