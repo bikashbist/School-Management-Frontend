@@ -1,0 +1,75 @@
+.login {
+    height: 100vh;
+
+    &__image {
+        position: relative;
+
+        img {
+            background-image: url('../images/school-1.jpeg');
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 100%;
+        }
+
+
+    }
+
+    &__form {
+        .logo {
+            height: 90px;
+        }
+    }
+
+    .login-form {
+        input {
+            width: 100%;
+            display: block;
+            height: 40px;
+            border: 1px solid #c5c5c5;
+            box-shadow: none !important;
+            outline: none !important;
+            padding: 0 10px 0 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 7px #c0d5f5;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+        button {
+            width: 100%;
+            display: block;
+            height: 40px;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            margin: 32px 0 32px 0;
+            cursor: pointer;
+            background: #4384e8;
+            color: #fff;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+            font-family: 'Fira Sans', sans-serif !important;
+            font-weight: 400;
+            color: #545454;
+        }
+        h3{
+            color: #0B0B0B;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            font-family: 'Fira Sans', sans-serif !important;
+        }
+    }
+}
