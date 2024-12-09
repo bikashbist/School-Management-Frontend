@@ -1,1 +1,76 @@
 @use 'login';
+$theme-color : #063868;
+
+.layout-topbar-bg {
+    background-color: $theme-color;
+    ;
+}
+
+.layout-topbar {
+    .layout-topbar-start {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 17rem;
+        background-color: $theme-color;
+
+        img {
+            height: 60px;
+        }
+    }
+
+    .layout-topbar-end {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}
+
+.layout-sidebar {
+    position: fixed;
+    height: calc(100% - 4rem);
+    left: 0;
+    height: 100%;
+    width: 17rem;
+    background: var(--menu-bg);
+    box-shadow: 0 3px 5px #00000005, 0 0 2px #0000000d, 0 1px 4px #00000014;
+    display: flex;
+    flex-direction: column;
+    &--logo{
+        height: 78px;
+        img{
+            height: 60px;
+           
+        }
+        i{
+            font-size: 20px;
+            color: $theme-color;
+        }
+    }
+}
+
+.layout-content-wrapper {
+    margin-left: 17rem;
+    height: 100vh;
+    background-color: #f1f4f9;
+
+    &--header{
+        height: 200px;
+        background-color: $theme-color;
+        &--top{
+            height: 78px;
+        }
+    }
+    .profile{
+        img{
+            height: 50px;
+        }
+        span{
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}

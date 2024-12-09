@@ -64,4 +64,69 @@
   margin-top: 32px;
   margin-bottom: 32px;
   font-family: "Fira Sans", sans-serif !important;
+}
+
+.layout-topbar-bg {
+  background-color: #063868;
+}
+
+.layout-topbar .layout-topbar-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 17rem;
+  background-color: #063868;
+}
+.layout-topbar .layout-topbar-start img {
+  height: 60px;
+}
+.layout-topbar .layout-topbar-end {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.layout-sidebar {
+  position: fixed;
+  height: calc(100% - 4rem);
+  left: 0;
+  height: 100%;
+  width: 17rem;
+  background: var(--menu-bg);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.0196078431), 0 0 2px rgba(0, 0, 0, 0.0509803922), 0 1px 4px rgba(0, 0, 0, 0.0784313725);
+  display: flex;
+  flex-direction: column;
+}
+.layout-sidebar--logo {
+  height: 78px;
+}
+.layout-sidebar--logo img {
+  height: 60px;
+}
+.layout-sidebar--logo i {
+  font-size: 20px;
+  color: #063868;
+}
+
+.layout-content-wrapper {
+  margin-left: 17rem;
+  height: 100vh;
+  background-color: #f1f4f9;
+}
+.layout-content-wrapper--header {
+  height: 200px;
+  background-color: #063868;
+}
+.layout-content-wrapper--header--top {
+  height: 78px;
+}
+.layout-content-wrapper .profile img {
+  height: 50px;
+}
+.layout-content-wrapper .profile span {
+  font-weight: 600;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
