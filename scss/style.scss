@@ -1,11 +1,15 @@
 @use 'login';
 $theme-color : #063868;
-
+body{
+    font-family: "Poppins", serif;
+}
 .layout-topbar-bg {
     background-color: $theme-color;
     ;
 }
-
+.my-custom{
+    margin: 2px 0px;
+}
 .layout-topbar {
     .layout-topbar-start {
         display: flex;
@@ -39,16 +43,44 @@ $theme-color : #063868;
     box-shadow: 0 3px 5px #00000005, 0 0 2px #0000000d, 0 1px 4px #00000014;
     display: flex;
     flex-direction: column;
-    &--logo{
+
+    &--logo {
         height: 78px;
-        img{
+
+        img {
             height: 60px;
-           
+
         }
-        i{
+
+        i {
             font-size: 20px;
             color: $theme-color;
         }
+    }
+    .sidebar .nav-link {
+        color: #343a40;
+        line-height: 23px;
+        text-decoration: none;
+        text-transform: capitalize;
+        padding: 10px 0px;
+        margin: 0 3px;
+        /* letter-spacing: 0.04em; */
+        position: relative;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+    .sidebar .nav-link.active {
+        background-color: #063868;
+        color: #fff;
+    }
+    .sidebar .nav-link:hover {
+        background-color: #e9ecef;
+        color: #007bff;
+    }
+    li.nav-item {
+        display: block;
+        width: 100%;
+        /* background: red; */
     }
 }
 
@@ -57,39 +89,109 @@ $theme-color : #063868;
     height: 100vh;
     background-color: #f1f4f9;
 
-    &--header{
-        height: 300px;
+    &--header {
+        height: 80px;
         background-color: $theme-color;
-        &--top{
+
+        &--top {
             height: 78px;
+             input[type=text] {
+                padding: 6px;
+               
+                font-size: 17px;
+                border: none;
+              }
+              
+               .search-container button {
+                float: right;
+                padding: 6px 10px;
+              
+                margin-right: 16px;
+                background: #ddd;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+              }
+              
+               .search-container button:hover {
+                background: #ccc;
+              }
         }
     }
-    .profile{
-        img{
+
+    .profile {
+        img {
             height: 50px;
         }
-        span{
+
+        span {
             font-weight: 600;
             color: #fff;
         }
     }
 
 }
-.layout-card{
-    margin-top: -210px;
-    &__h{
-        height: auto;
+
+.layout-card {
+    &__h {
+        height: 100%;
+        box-shadow: 0 0 40px rgba(8, 21, 66, .05);
     }
-    .icon-layout{
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background-color: #ff7800;
-        align-items: center;
-        margin: auto;
+
+    .icon-layout {
+  
+       
         margin-bottom: 10px;
-        i{
+
+        i {
             color: #fff;
         }
+
+        span {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background: #fff;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(92, 97, 242, .5);
+        }
+
+        span:before {
+            content: "";
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            height: 68px;
+            width: 68px;
+            border-radius: 50px;
+            border: 1.5px dashed #5c61f2;
+        }
+
+        svg {
+            width: 35px;
+            height: 35px;
+            fill: #5c61f2;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        a {
+            color: #959595 !important;
+            font-weight: 500;
+        }
     }
+}
+.page-title{
+  h3{
+    text-transform: capitalize;
+    color: #171829;
+    font-weight: 500;
+    font-size: 22px;
+  }
 }

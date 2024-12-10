@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+   
     <link rel="stylesheet" href="scss/style.css">
     <style>
-        .container-fluid{
-            padding-left: 39px!important;
-            padding-right: 39px!important;
+        .container-fluid {
+            padding-left: 39px !important;
+            padding-right: 39px !important;
         }
     </style>
 </head>
@@ -22,141 +29,489 @@
 <body class="dashboard">
 
     <div class="layout-container">
-        <!-- <div class="layout-topbar layout-topbar-bg d-flex">
-        <div class="layout-topbar-start">
-            <img src="images/logo.png" alt="logo">
-        </div>
-        <div class="layout-topbar-end">
-            <h6 class="text-white">Welcome to Ramesh Thapa!</h6>
-        </div>
-
-    </div> -->
-        <div class="layout-sidebar px-3">
-            <div class="layout-sidebar--logo d-flex justify-content-between align-items-center py-3">
+     
+        <div class="layout-sidebar ">
+            <div class="layout-sidebar--logo px-3 d-flex justify-content-between align-items-center py-3">
                 <img src="images/logo.png" alt="img">
                 <div class="d-flex align-items-center">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-            
+
             </div>
+
+            <div class="sidebar">
+               
+                <ul class="nav ">
+                    <li class="nav-item my-custom">
+                        <a class="nav-link active rounded px-3" href="#"> <span class="me-2"><i class="bi bi-house-door-fill"></i></span> Dashboard</a>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#Student" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="Student">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Student
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="Student">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link" href="#"> <i class="bi bi-circle me-2"></i></span> Student Admission</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link" href="#"> <i class="bi bi-circle me-2"></i></span> Student Admission</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link" href="#"> <i class="bi bi-circle me-2"></i></span> Student Admission</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#Academic" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="Academic">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Academic
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="Academic">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#StudentAdmission" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="StudentAdmission">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Student Admission
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="StudentAdmission">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#StudentCurrent" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="StudentCurrent">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Student Current
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="StudentCurrent">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#StudentDocuments" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="StudentDocuments">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Student Documents
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="StudentDocuments">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#StudentLeaveNote" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="StudentLeaveNote">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            Student Leave Note
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="StudentLeaveNote">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-custom">
+                        <a class="nav-link d-flex justify-content-between align-items-center px-3" 
+                           data-bs-toggle="collapse" 
+                           href="#StudentIDCard" 
+                           role="button" 
+                           aria-expanded="false" 
+                           aria-controls="StudentIDCard">
+                           <div>
+                            <span class="me-2"><i class="bi bi-backpack-fill"></i></span>
+                            StudentID Card
+                           </div>
+                           
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                        <div class="collapse" id="StudentIDCard">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                                <li class="nav-item my-custom"><a class="nav-link px-2" href="#"> <i class="bi bi-circle me-2"></i></span> Student History</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
         </div>
         <div class="layout-content-wrapper">
             <div class="layout-content-wrapper--header  ">
                 <div class="container-fluid">
-                    <div class="layout-content-wrapper--header--top d-flex justify-content-between align-items-center py-3">
-                        <div class="page--title">
-                            <h2 class="text-white fs-5">Dashboard</h2>
+                    <div
+                        class="layout-content-wrapper--header--top d-flex justify-content-between align-items-center  py-3">
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
                         </div>
                         <div class="profile">
+                            
                             <div class="profile--img">
-                                <img class="rounded-circle" src="images/profile.jpg" alt="profile">
+                                
+                                <a href="login.html"><img class="rounded-circle" src="images/profile.jpg" alt="profile"></a>
                                 <span>Jessica Jones</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="page-title">
+                <div class="container-fluid">
+                    <h3 class="my-4"> School Management Dashboard</h3>
+                </div>
+            </div>
             <section class="layout-card">
                 <div class="container-fluid">
                     <div class="row g-3">
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                
-                                <h6>
-                                    New Payment
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Student List
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Daily Attendance
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4>$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Monthly Attendance Report
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Manage Library
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Routine
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Teacher List
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                   Cofig
-                                </h6>
+
+
                             </div>
                         </div>
-                        <div class="col-lg-2 ">
-                            
-                            <div class="bg-white rounded layout-card__h p-3 text-center">
+                        <div class="col-lg-3 ">
+
+                            <div class="bg-white rounded layout-card__h p-3 ">
                                 <div class="icon-layout d-flex align-items-center justify-content-center">
-                                    <i class="fa-solid fa-sack-dollar"></i>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M326.7 403.7c-22.1 8-45.9 12.3-70.7 12.3s-48.7-4.4-70.7-12.3l-.8-.3c-30-11-56.8-28.7-78.6-51.4C70 314.6 48 263.9 48 208C48 93.1 141.1 0 256 0S464 93.1 464 208c0 55.9-22 106.6-57.9 144c-1 1-2 2.1-3 3.1c-21.4 21.4-47.4 38.1-76.3 48.6zM256 91.9c-11.1 0-20.1 9-20.1 20.1l0 6c-5.6 1.2-10.9 2.9-15.9 5.1c-15 6.8-27.9 19.4-31.1 37.7c-1.8 10.2-.8 20 3.4 29c4.2 8.8 10.7 15 17.3 19.5c11.6 7.9 26.9 12.5 38.6 16l2.2 .7c13.9 4.2 23.4 7.4 29.3 11.7c2.5 1.8 3.4 3.2 3.7 4c.3 .8 .9 2.6 .2 6.7c-.6 3.5-2.5 6.4-8 8.8c-6.1 2.6-16 3.9-28.8 1.9c-6-1-16.7-4.6-26.2-7.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-2.2-.7-4.3-1.5-6.4-2.1c-10.5-3.5-21.8 2.2-25.3 12.7s2.2 21.8 12.7 25.3c1.2 .4 2.7 .9 4.4 1.5c7.9 2.7 20.3 6.9 29.8 9.1l0 6.4c0 11.1 9 20.1 20.1 20.1s20.1-9 20.1-20.1l0-5.5c5.3-1 10.5-2.5 15.4-4.6c15.7-6.7 28.4-19.7 31.6-38.7c1.8-10.4 1-20.3-3-29.4c-3.9-9-10.2-15.6-16.9-20.5c-12.2-8.8-28.3-13.7-40.4-17.4l-.8-.2c-14.2-4.3-23.8-7.3-29.9-11.4c-2.6-1.8-3.4-3-3.6-3.5c-.2-.3-.7-1.6-.1-5c.3-1.9 1.9-5.2 8.2-8.1c6.4-2.9 16.4-4.5 28.6-2.6c4.3 .7 17.9 3.3 21.7 4.3c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-4.4-1.2-14.4-3.2-21-4.4l0-6.3c0-11.1-9-20.1-20.1-20.1zM48 352l16 0c19.5 25.9 44 47.7 72.2 64L64 416l0 32 192 0 192 0 0-32-72.2 0c28.2-16.3 52.8-38.1 72.2-64l16 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48l0-64c0-26.5 21.5-48 48-48z" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="ms-3">
+
+                                            <h4 class="mb-0 fw-bold">$73,927</h4>
+                                            <a class="text-decoration-none" href="#">
+                                                New Payment
+
+                                            </a>
+
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <h6>
-                                    Payment List
-                                </h6>
+
+
                             </div>
                         </div>
                     </div>
@@ -171,6 +526,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script>
+        document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]').forEach(link => {
+            link.addEventListener('click', function () {
+                const icon = this.querySelector('.bi');
+                icon.classList.toggle('bi-chevron-right');
+                icon.classList.toggle('bi-chevron-down');
+            });
+        });
+    </script>
+    
 </body>
 
 </html>

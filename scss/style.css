@@ -66,8 +66,16 @@
   font-family: "Fira Sans", sans-serif !important;
 }
 
+body {
+  font-family: "Poppins", serif;
+}
+
 .layout-topbar-bg {
   background-color: #063868;
+}
+
+.my-custom {
+  margin: 2px 0px;
 }
 
 .layout-topbar .layout-topbar-start {
@@ -110,6 +118,31 @@
   font-size: 20px;
   color: #063868;
 }
+.layout-sidebar .sidebar .nav-link {
+  color: #343a40;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px 0px;
+  margin: 0 3px;
+  /* letter-spacing: 0.04em; */
+  position: relative;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.layout-sidebar .sidebar .nav-link.active {
+  background-color: #063868;
+  color: #fff;
+}
+.layout-sidebar .sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+.layout-sidebar li.nav-item {
+  display: block;
+  width: 100%;
+  /* background: red; */
+}
 
 .layout-content-wrapper {
   margin-left: 17rem;
@@ -117,11 +150,28 @@
   background-color: #f1f4f9;
 }
 .layout-content-wrapper--header {
-  height: 300px;
+  height: 80px;
   background-color: #063868;
 }
 .layout-content-wrapper--header--top {
   height: 78px;
+}
+.layout-content-wrapper--header--top input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+}
+.layout-content-wrapper--header--top .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.layout-content-wrapper--header--top .search-container button:hover {
+  background: #ccc;
 }
 .layout-content-wrapper .profile img {
   height: 50px;
@@ -131,21 +181,54 @@
   color: #fff;
 }
 
-.layout-card {
-  margin-top: -210px;
-}
 .layout-card__h {
-  height: auto;
+  height: 100%;
+  box-shadow: 0 0 40px rgba(8, 21, 66, 0.05);
 }
 .layout-card .icon-layout {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #ff7800;
-  align-items: center;
-  margin: auto;
   margin-bottom: 10px;
 }
 .layout-card .icon-layout i {
   color: #fff;
+}
+.layout-card .icon-layout span {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(92, 97, 242, 0.5);
+}
+.layout-card .icon-layout span:before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  height: 68px;
+  width: 68px;
+  border-radius: 50px;
+  border: 1.5px dashed #5c61f2;
+}
+.layout-card .icon-layout svg {
+  width: 35px;
+  height: 35px;
+  fill: #5c61f2;
+}
+.layout-card .icon-layout h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.layout-card .icon-layout a {
+  color: #959595 !important;
+  font-weight: 500;
+}
+
+.page-title h3 {
+  text-transform: capitalize;
+  color: #171829;
+  font-weight: 500;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */
